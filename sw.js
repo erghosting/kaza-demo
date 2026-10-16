@@ -1,4 +1,4 @@
-const CACHE='kaza-investor-demo-v6-20261016';
+const CACHE='kaza-investor-demo-v7-depth-20261016';
 const ROOT=new URL('./',self.location.href).href;
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll([ROOT,ROOT+'index.html',ROOT+'manifest.webmanifest',ROOT+'icons/kaza-192.png',ROOT+'icons/kaza-512.png'])).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('kaza-investor-demo-')&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim()));});
