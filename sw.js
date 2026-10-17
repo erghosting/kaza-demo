@@ -1,4 +1,4 @@
-const CACHE='kaza-investor-demo-v8-review-fixes-20261016';
+const CACHE='kaza-investor-demo-v9-portal-layout-20261016';
 const ROOT=new URL('./',self.location.href).href;
 const INDEX=ROOT+'index.html';
 const LIMIT=80;
