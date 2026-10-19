@@ -1,4 +1,4 @@
-const CACHE='kaza-investor-demo-v11-sixty-second-tour-20261019';
+const CACHE='kaza-investor-demo-v12-tour-polish-20261019';
 const ROOT=new URL('./',self.location.href).href;
 const INDEX=ROOT+'index.html';
 const LIMIT=80;
